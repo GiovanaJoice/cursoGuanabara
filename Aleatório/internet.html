@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobrindo a circunferência!</title>
+</head>
+
+<body>
+    <h1>Para saber o diâmetro, comprimento e área da sua circunferência digite:</h1>
+    <h2>O valor do raio da sua circunferência:</h2>
+    <input type="number" id="botao_raio"> <br><br>
+    <button onclick="diComCir1()">Mostrar</button>
+
+<script>
+    function diComCir1(){
+  var raio = parseFloat(document.getElementById('botao_raio').value)
+  var pi = parseFloat(3,14)
+  var di = raio*2
+  var com = 2*pi*raio
+  var area = pi*raio^2
+  document.getElementById('raio').innerHTML = `Diâmetro: ${di} Comprimento: ${com} Área: ${area}`
+}
+</script>
+    
+</body>
+<p id="raio"></p>
+</html>
+

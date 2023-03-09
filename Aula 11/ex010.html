@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        div#res{
+            margin-top: 10pt;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistema de multas!</h1>
+    <h2>Insira a velocidade do carro:</h2>
+    <input type="number" name="vel" id="input_vel" placeholder="Em km/h...">
+    <input type="button" value="Verificar" onclick="mutarounao ()">
+    <div id="res"></div> 
+    <script>
+        function mutarounao () {
+            var velocidade = parseInt(document.getElementById('input_vel').value)
+            var res = document.getElementById('res')
+            
+            res.innerHTML += `Sua velocidade é de ${velocidade}km/h.`
+            if(velocidade > 60){
+                res.innerHTML = 'MULTADO, por excesso de velocidade! <br>'
+            }
+            res.innerHTML += "Dirija sempre usando cinto de segurança!"
+        }
+
+    </script>
+
+</body>
+</html>

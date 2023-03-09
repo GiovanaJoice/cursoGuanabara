@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventos DOM</title>
+
+    <style>
+        div#piscapisca {
+            font: sans-serif;
+            background-color: rgba(221, 125, 176, 0.486);
+            color: ghostwhite;
+            width: 250px;
+            height: 250px;
+            line-height: 250px;
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="piscapisca">
+        Interaja...
+    </div>
+
+    <script>
+        var quadrado = document.getElementById('piscapisca')
+        quadrado.addEventListener('click', clicar)
+        quadrado.addEventListener('mouseenter', entrar)
+        quadrado.addEventListener('mouseleave', sair)
+
+        function clicar() { 
+            quadrado.innerHTML = 'Clicou!'
+            quadrado.style.background = 'skyblue'
+        }
+        function entrar() {
+            quadrado.innerHTML = 'Entrou!'
+        }
+        function sair(){
+            quadrado.innerHTML = 'Saiu!'
+            quadrado.style.background = 'rgba(221, 125, 176, 0.486)'
+        }
+    </script>
+</body>
+
+</html>

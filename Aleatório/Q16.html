@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dê dois números!</title>
+</head>
+
+<style>
+  h1{
+    background-color: rgb(183, 0, 255);
+
+  }
+</style>
+
+<body>
+  <h1>Informe dois números:</h1>
+  <input type="number" id="numero1">
+  <input type="number" id="numero2"> <br><br>
+  <button onclick= "infonum6()">Descobrir</button>
+  
+  <h2 id="res"></h2>
+
+<script
+  function infonum6(){
+    var n1 = parseInt(document.getElementById(numero1).value)
+    var n2 = parseInt(document.getElementById('numero2').value)
+    var a = n1 + n2
+    var b = n1 * (n2**2)
+    var c = n1 **
+    var d = Math.sqrt(n1** + n2**)
+    var e = Math.sin(n1-n2)
+    var f = Math.abs(n1);
+    
+    document.getElementById().innL = `A soma dos números é: ${a}
+    O produto do primeiro número pelo quadrado do segundo é: ${b}
+    O quadrado do primeiro número é: ${c}
+    A raiz quadrada da soma dos quadrados é: ${d}
+    O seno da diferença do primeiro número pelo segundo é: ${e}
+    O módulo do primeiro número é: ${f}`
+  }
+
+></script>
+
+</body>
+</html>
